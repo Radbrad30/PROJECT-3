@@ -28,7 +28,8 @@ with open("./http_access_log.txt") as s:
 		if re.search('(/Sep/)', line):
 				sep+=1
 		if re.search('(/Oct/1995)', line):				
-				oct95+=1									
+				oct95+=1
+				
 print("Total requests made in last 6 months is?:", apr + may + jun + jul + aug + sep + oct95)
 requests = len(open("./http_access_log.txt").readlines())
 print('Total requests were made in the time period is?:', requests)
